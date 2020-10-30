@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Mastan">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Deep Feedfroward networks 6 - My notes</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../docskimmer.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Deep Feedfroward networks 6";
+    var mkdocs_page_input_path = "goodFellow6.md";
+    var mkdocs_page_url = "/goodFellow6/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gilbert/">Linear Algebra and Differential Eq.</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../calculus/">Calculus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../manifold/">ManifoldBasics</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow4/">Numerical Computation 4</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow5/">Machine learning Basics 5</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../inference/">Inference</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Deep Feedfroward networks 6</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#deep-feedforward-networks">Deep Feedforward Networks</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#example-learning-xor">Example: learning XOR</a></li>
+        
+            <li><a class="toctree-l3" href="#gradient-based-learning">Gradient based learning</a></li>
+        
+            <li><a class="toctree-l3" href="#hiddent-units">Hiddent units</a></li>
+        
+            <li><a class="toctree-l3" href="#universal-approximation-theorem">Universal approximation theorem</a></li>
+        
+            <li><a class="toctree-l3" href="#backpropagation-and-other-differentiation">Backpropagation and other differentiation</a></li>
+        
+            <li><a class="toctree-l3" href="#historical-notes">Historical notes</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow7/">Regularization 7</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow8/">Optimization for Deep-models 8</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow9/">Convolutional Network 9</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../spectral/">SpectralClustering</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gan/">GAN</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Deep Feedfroward networks 6</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="deep-feedforward-networks">Deep Feedforward Networks<a class="headerlink" href="#deep-feedforward-networks" title="Permanent link"></a></h1>
+<p><img alt="1" src="../GoodFellowBook/images/image1.jpg" />
+<img alt="1" src="../GoodFellowBook/images/image2.jpg" /></p>
+<h2 id="example-learning-xor">Example: learning XOR<a class="headerlink" href="#example-learning-xor" title="Permanent link"></a></h2>
+<p><img alt="image" src="../images/6.11.png" />
+<img alt="image" src="../images/6.12.png" />
+<img alt="image" src="../images/6.13.png" />
+<img alt="image" src="../images/6.14.png" /></p>
+<h2 id="gradient-based-learning">Gradient based learning<a class="headerlink" href="#gradient-based-learning" title="Permanent link"></a></h2>
+<h3 id="learning-conditional-distributions-with-maximum-likelihood">Learning Conditional Distributions with Maximum Likelihood<a class="headerlink" href="#learning-conditional-distributions-with-maximum-likelihood" title="Permanent link"></a></h3>
+<p>Most modern neural networks are trained using maximum likelihood. This meansthat the cost function is simply the negative log-likelihood, equivalently describedas the cross-entropy between the training data and the model distribution. Thiscost function is given by:</p>
+<div class="arithmatex">\[
+J(\theta) = - E_{x,y \approx \hat{p}_{data}} \log p_{model} (y|x)
+\]</div>
+<h3 id="learning-conditional-statistics">Learning Conditional Statistics<a class="headerlink" href="#learning-conditional-statistics" title="Permanent link"></a></h3>
+<p>Instead of learning a full probability distribution <span class="arithmatex">\(p(y | x;\theta)\)</span>, we often want tolearn just one conditional statistic of y given x.</p>
+<p>For example, we may have a predictor <span class="arithmatex">\(f(x;\theta)\)</span> that we wish to employ to predictthe mean of <span class="arithmatex">\(y\)</span>. From this point of view, wecan view the cost function as being afunctionalrather than just a function. </p>
+<p>Another example, we can design the cost functional to have itsminimum lie on the function that mapsxto the expected value of <span class="arithmatex">\(y\)</span> given <span class="arithmatex">\(x\)</span>. Solving an optimization problem with respect to a function requires a mathematicaltool called calculus of variations.</p>
+<p><img alt="image" src="../images/6_2_1.png" /></p>
+<p>Unfortunately, mean squared error and mean absolute error often lead to poor results when used with gradient-based optimization. Some output units that saturate produce very small gradients when combined with these cost functions.This is one reason that the cross-entropy cost function is more popular than mean squared error or mean absolute error, even when it is not necessary to estimate an entire distribution <span class="arithmatex">\(p(y | x)\)</span>.</p>
+<h3 id="output-type">Output type<a class="headerlink" href="#output-type" title="Permanent link"></a></h3>
+<p>The choice of cost function is tightly coupled with the choice of output unit. Mostof the time, we simply use the cross-entropy between the data distribution and themodel distribution. The choice of how to represent the output then determinesthe form of the cross-entropy function.Any kind of neural network unit that may be used as an output can also beused as a hidden unit. Here, we focus on the use of these units as outputs of themodel, but in principle they can be used internally as well.</p>
+<p><img alt="image" src="../images/6.2Out.png" />
+<img alt="image" src="../images/6.22.png" /></p>
+<h2 id="hiddent-units">Hiddent units<a class="headerlink" href="#hiddent-units" title="Permanent link"></a></h2>
+<p>most hidden units can be described as acceptinga vector of inputsx, computing an aﬃne transformation <span class="arithmatex">\(z=W^T x+b\)</span>, and then applying an element-wise nonlinear function <span class="arithmatex">\(g(z)\)</span>. Most hidden units are distinguished from each other only by the choice of the form of the activation function <span class="arithmatex">\(g(z)\)</span>.</p>
+<p>Rectiﬁed linear units use the activation function <span class="arithmatex">\(g(z) = max \{\theta, z\}\)</span>. Note that it is not differentiable at <span class="arithmatex">\(z=0\)</span> because the left and the right limits are not equal. However in practice, we can safely disregard the non differentiability of the hidden unit activation functions. A varient of Relu is leaky relu which is differentiable. </p>
+<p>Prior tp Relu, most neural networks used logistic sigmoid activation function <span class="arithmatex">\(g(z)=\sigma (z)\)</span> or the hyperbolic tengent activation function <span class="arithmatex">\(g(z)=tanh(z)\)</span>. These activation function are closely related because <span class="arithmatex">\(tanh(z) = 2 \sigma (2z) - 1\)</span>.
+<img alt="image" src="../images/relu.png" />
+Unlike piecewise linear units, sigmoidal units saturate across most of their domain—they saturate to a high value when <span class="arithmatex">\(z\)</span> is very positive, saturate to a low value whenzis very negative, and are onlystrongly sensitive to their input when <span class="arithmatex">\(z\)</span> is near <span class="arithmatex">\(\theta\)</span>. The widespread saturation of sigmoidal units can make gradient-based learning very difficult. For this reason,their use as hidden units in feedforward networks is now discouraged. However, Recurrent networks, many probabilistic models, and some autoencoders have additional requirements that rule out the use of piece wise linear activation functions and make sigmoidal units more appealing despite the drawbacks of saturation.</p>
+<h2 id="universal-approximation-theorem">Universal approximation theorem<a class="headerlink" href="#universal-approximation-theorem" title="Permanent link"></a></h2>
+<p>The universal approximation theorem(Horniket al., 1989; Cybenko, 1989) states that a feedforward network with a linear outputlayer and at least one hidden layer with any “squashing” activation function (suchas the logistic sigmoid activation function) can approximate any Borel measurablefunction from one ﬁnite-dimensional space to another with any desired nonzeroamount of error, provided that the network is given enough hidden units. Thederivatives of the feedforward network can also approximate the derivatives of thefunction arbitrarily well (Hornik et al., 1990).</p>
+<p>In summary, a feedforward network with a single layer is suﬃcient to representany function, but the layer may be infeasibly large and may fail to learn andgeneralize correctly. In many circumstances, using deeper models can reduce thenumber of units required to represent the desired function and can reduce theamount of generalization error.
+<img alt="1" src="../CNNbasics/images/image2.jpg" /></p>
+<h2 id="backpropagation-and-other-differentiation">Backpropagation and other differentiation<a class="headerlink" href="#backpropagation-and-other-differentiation" title="Permanent link"></a></h2>
+<p><img alt="image" src="../images/chainRule.png" />
+Usually we apply the back-propagation algorithm to tensors of arbitrary di-mensionality, not merely to vectors. Conceptually, this is exactly the same asback-propagation with vectors. The only difference is how the numbers are ar-ranged in a grid to form a tensor. We could imagine ﬂattening each tensor intoa vector before we run back-propagation, computing a vector-valued gradient,and then reshaping the gradient back into a tensor. In this rearranged view,back-propagation is still just multiplying Jacobians by gradients.
+<img alt="image" src="../images/chainRule.png" />
+<img alt="image" src="../images/chainRule3.png" />
+<img alt="image" src="../images/forwardProp.png" />
+<img alt="image" src="../images/bakwardComputation.png" />
+<img alt="image" src="../images/backProp.png" /></p>
+<h2 id="historical-notes">Historical notes<a class="headerlink" href="#historical-notes" title="Permanent link"></a></h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../goodFellow7/" class="btn btn-neutral float-right" title="Regularization 7">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../inference/" class="btn btn-neutral" title="Inference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../inference/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../goodFellow7/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>

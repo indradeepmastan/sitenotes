@@ -1,0 +1,469 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "This documentation is made for educational purpose.",
+            "title": "Home"
+        },
+        {
+            "location": "/gilbert/",
+            "text": "Solving Differential Eq.\n\uf0c1\n\n\n\n\nSVD\n\uf0c1\n\n\n\n\nEigen Values\n\uf0c1\n\n\n\n\nPositive Definite Matrix\n\uf0c1\n\n\n\n\nDiagonalising a Matrix\n\uf0c1\n\n\n\n\nSecond Order System\n\uf0c1\n\n\n\n\nThe Matrix Exponential\n\uf0c1",
+            "title": "Linear Algebra and Differential Eq."
+        },
+        {
+            "location": "/gilbert/#solving-differential-eq",
+            "text": "",
+            "title": "Solving Differential Eq."
+        },
+        {
+            "location": "/gilbert/#svd",
+            "text": "",
+            "title": "SVD"
+        },
+        {
+            "location": "/gilbert/#eigen-values",
+            "text": "",
+            "title": "Eigen Values"
+        },
+        {
+            "location": "/gilbert/#positive-definite-matrix",
+            "text": "",
+            "title": "Positive Definite Matrix"
+        },
+        {
+            "location": "/gilbert/#diagonalising-a-matrix",
+            "text": "",
+            "title": "Diagonalising a Matrix"
+        },
+        {
+            "location": "/gilbert/#second-order-system",
+            "text": "",
+            "title": "Second Order System"
+        },
+        {
+            "location": "/gilbert/#the-matrix-exponential",
+            "text": "",
+            "title": "The Matrix Exponential"
+        },
+        {
+            "location": "/calculus/",
+            "text": "Vector Field\n\uf0c1\n\n\n\n\nDel operator\n\uf0c1\n\n\n\n\nDifferential Operators\n\uf0c1\n\n\n\n\n\n\n\n\n\n\nEuler\u2013Lagrange equation\n\uf0c1\n\n\nIn the calculus of variations, the Euler\u2013Lagrange equation, Euler's equation, or Lagrange's equation, is a second-order partial differential equation whose \nsolutions are the functions\n for which a given functional is stationary.",
+            "title": "Calculus"
+        },
+        {
+            "location": "/calculus/#vector-field",
+            "text": "",
+            "title": "Vector Field"
+        },
+        {
+            "location": "/calculus/#del-operator",
+            "text": "",
+            "title": "Del operator"
+        },
+        {
+            "location": "/calculus/#differential-operators",
+            "text": "",
+            "title": "Differential Operators"
+        },
+        {
+            "location": "/calculus/#eulerlagrange-equation",
+            "text": "In the calculus of variations, the Euler\u2013Lagrange equation, Euler's equation, or Lagrange's equation, is a second-order partial differential equation whose  solutions are the functions  for which a given functional is stationary.",
+            "title": "Euler\u2013Lagrange equation"
+        },
+        {
+            "location": "/manifold/",
+            "text": "Definitions\n\uf0c1\n\n\n\n\nOperators on Manifolds\n\uf0c1\n\n\n\n\nLaplacian on Manifolds\n\uf0c1\n\n\n\n\nCalculus on Manifolds\n\uf0c1",
+            "title": "ManifoldBasics"
+        },
+        {
+            "location": "/manifold/#definitions",
+            "text": "",
+            "title": "Definitions"
+        },
+        {
+            "location": "/manifold/#operators-on-manifolds",
+            "text": "",
+            "title": "Operators on Manifolds"
+        },
+        {
+            "location": "/manifold/#laplacian-on-manifolds",
+            "text": "",
+            "title": "Laplacian on Manifolds"
+        },
+        {
+            "location": "/manifold/#calculus-on-manifolds",
+            "text": "",
+            "title": "Calculus on Manifolds"
+        },
+        {
+            "location": "/goodFellow4/",
+            "text": "4 Numerical Computation\n\uf0c1\n\n\nA\n\n\n4.1 Overflow and Underflow\n\uf0c1\n\n\n4.2 Poor conditioning\n\uf0c1\n\n\n4.3 Gradient Based Optimization\n\uf0c1\n\n\nA\n\n\n\n\n\n\n\n\n\n\n4.4 Constrained Optimization\n\uf0c1\n\n\nA\n\nThe KKT approach generalizes the method of Lagrange multipliers, which allows equality constraints but not inequality constraints.\n\n\n\n4.5 Example of Linear Least Square\n\uf0c1",
+            "title": "Numerical Computation 4"
+        },
+        {
+            "location": "/goodFellow4/#4-numerical-computation",
+            "text": "A",
+            "title": "4 Numerical Computation"
+        },
+        {
+            "location": "/goodFellow4/#41-overflow-and-underflow",
+            "text": "",
+            "title": "4.1 Overflow and Underflow"
+        },
+        {
+            "location": "/goodFellow4/#42-poor-conditioning",
+            "text": "",
+            "title": "4.2 Poor conditioning"
+        },
+        {
+            "location": "/goodFellow4/#43-gradient-based-optimization",
+            "text": "A",
+            "title": "4.3 Gradient Based Optimization"
+        },
+        {
+            "location": "/goodFellow4/#44-constrained-optimization",
+            "text": "A \nThe KKT approach generalizes the method of Lagrange multipliers, which allows equality constraints but not inequality constraints.",
+            "title": "4.4 Constrained Optimization"
+        },
+        {
+            "location": "/goodFellow4/#45-example-of-linear-least-square",
+            "text": "",
+            "title": "4.5 Example of Linear Least Square"
+        },
+        {
+            "location": "/goodFellow5/",
+            "text": "Machine learning Basics\n\uf0c1\n\n\n5.1 Learning Algorithm\n\uf0c1\n\n\nA\n\n\n5.2 Capacity, Overfitting, Underfitting\n\uf0c1\n\n\nA\n\n\n5.3 Hyper-Parameters and Validation Set\n\uf0c1\n\n\n5.7 Supervised Learning\n\uf0c1\n\n\nA\n\n\n\n\n\n\n\n\n\n\n5.8 Unsupervised Learning\n\uf0c1\n\n\nA\n\n\n5.9 Stocastic Gradient Decent\n\uf0c1\n\n\n5.10 Building a Machine Learning Algo\n\uf0c1\n\n\n5.11 Challenges Motivating Deeplearning\n\uf0c1",
+            "title": "Machine learning Basics 5"
+        },
+        {
+            "location": "/goodFellow5/#machine-learning-basics",
+            "text": "",
+            "title": "Machine learning Basics"
+        },
+        {
+            "location": "/goodFellow5/#51-learning-algorithm",
+            "text": "A",
+            "title": "5.1 Learning Algorithm"
+        },
+        {
+            "location": "/goodFellow5/#52-capacity-overfitting-underfitting",
+            "text": "A",
+            "title": "5.2 Capacity, Overfitting, Underfitting"
+        },
+        {
+            "location": "/goodFellow5/#53-hyper-parameters-and-validation-set",
+            "text": "",
+            "title": "5.3 Hyper-Parameters and Validation Set"
+        },
+        {
+            "location": "/goodFellow5/#57-supervised-learning",
+            "text": "A",
+            "title": "5.7 Supervised Learning"
+        },
+        {
+            "location": "/goodFellow5/#58-unsupervised-learning",
+            "text": "A",
+            "title": "5.8 Unsupervised Learning"
+        },
+        {
+            "location": "/goodFellow5/#59-stocastic-gradient-decent",
+            "text": "",
+            "title": "5.9 Stocastic Gradient Decent"
+        },
+        {
+            "location": "/goodFellow5/#510-building-a-machine-learning-algo",
+            "text": "",
+            "title": "5.10 Building a Machine Learning Algo"
+        },
+        {
+            "location": "/goodFellow5/#511-challenges-motivating-deeplearning",
+            "text": "",
+            "title": "5.11 Challenges Motivating Deeplearning"
+        },
+        {
+            "location": "/inference/",
+            "text": "Checking latex. \n\\(\n\\(x\\)\n\\)\n \n\n\nMotivation: Probability V/S Statistics\n\uf0c1\n\n\nWhat we want to do ? -- we want to determine some unknown quantity.\n\n\nStatistics need to calculate some parameters to show that results are close to true value of the unknown however probability problem revolves around calculating the actual values. The difference between the \nBayesian\n and \nclassical statistics\n:  Bayesian approach consider the unknown quantity as a random variable whereas the classical statistician will think of it as some constant value.\n\n\nImportant definitions:\n\uf0c1\n\n\nHere, first we give small definitions:\n\n\nModel inference\n: a simple example  \n\\(y_i = x_i \\theta + W\\)\n, where learning \n\\(\\theta\\)\n is model inference and learning \n\\(x_i\\)\n from \n\\(y_i\\)\n is variable inference (\n\\(\\theta\\)\n is known). for example: consider a noisy channel where sometimes we want to know the system estimation (attenuation \n\\(\\theta\\)\n) or want to know the sound given \n\\(y_i\\)\n.\n\n\nvariable inference\n\n\nEstimate\n: it to refer to the numerical value \n\\(\\hat{\\theta}\\)\n that we choose to report on the basis of the actual observation \n\\(x\\)\n. The value of \n\\(\\hat{\\theta}\\)\n is to be determined by applying some function \n\\(g\\)\n to the observation \n\\(x\\)\n, resulting in \n\\(\\hat{\\theta} = g(x)\\)\n. \n\n\nEstimator\n: The random variable \n\\(\\hat{\\Theta} = g(X)\\)\n is called an estimator, and its realized value equals \n\\(g(x)\\)\n whenever the random variable \n\\(X\\)\n takes the value \n\\(x\\)\n.\n\n\nEmpirical distribution\n: This contains the various measurements and data point. each data point is a random variable.\n\n\nTrue distribution\n: when have some idea of the true distribution (can be approximated by a linear or polynomial regression ) then it is called the parametric setting, where as if we have no idea of true distribution accept it is some function of \n\\(X\\)\n, as \n\\(g(X)\\)\n, this is called the non-parametric setting.\n\n\nModel distribution\n: After finishing the estimation process, we get some value of unknown quantity, in case of linear model we get slop and the intercept of the line to model \n\\(y_i = x_i \\theta_1 + \\theta_2\\)\n. \n\n\nBelow, we give big (important) definitions:\n\n\nPoint estimate\n\uf0c1\n\n\nPoint estimation is the attempt to provide the single \u201cbest\u201d prediction of somequantity of interest. In general the quantity of interest can be a single parameteror a vector of parameters in some parametric model, such as the weights in ourlinear regression example. To distinguish estimates of parameters from their true value, our conventionwill be to denote a point estimate of a parameter \n\\(\\theta\\)\n by \n\\(\\hat{\\theta}\\)\n.\n\n\nLet \n\\({x^{(1)}, . . . , x^{(m)}}\\)\n be a set of \n\\(m\\)\n independent and identically distributed data points. A point estimator or statistic is any function of the data:\n$$\n\\hat{\\theta_m} = g(x^{(1)}, . . . , x^{(m)}).\n$$\n\n\nFunction Estimation\n\uf0c1\n\n\nSometimes we are interested in performing functionestimation (or function approximation). Here, we are trying to predict a variableygiven an input vectorx. We assume that there is a functionf(x) that describesthe approximate relationship betweenyandx. For example, we may assume that \n\\(y=f(x) +\\epsilon\\)\n, where \n\\(\\epsilon\\)\n stands for the part of \n\\(y\\)\n that is not predictable from \n\\(x\\)\n. In function estimation, we are interested in approximating \n\\(f\\)\n with a model or estimate \n\\(\\hat{f}\\)\n. Function estimation is really just the same as estimating a parameter \n\\(\\theta\\)\n; the function estimator \n\\(\\hat{f}\\)\n is simply a point estimator in function space. The linear regression example and the polynomial regression example both illustrate scenarios that may be interpreted as either estimating a parameter \n\\(w\\)\n or estimating a function \n\\(\\hat{f}\\)\n mapping from \n\\(x\\)\n to \n\\(y\\)\n.\n\n\nHypothesis testing\n\uf0c1\n\n\nAn unknown parameter takes a finite number of values. One wants to find the best hypothesis based on the data. e.g. binary hypothesis problem or m-ary hypothesis problem. \n\n\nNon-parametric\n\uf0c1\n\n\nIf we have no idea of true distribution accept it is some function of \n\\(X\\)\n, as \n\\(g(X)\\)\n, this is called the non-parametric setting.\n\n\nStatistical Inference\n\uf0c1\n\n\nThe problems are divided as:\n\n\n\n\nClasical statistical inference\n\n\nBayesian statistical inference\n\n\n\n\nClasical statistical inference\n\uf0c1\n\n\n\n\nThe parameter(s) \n\\(\\theta\\)\n is fixed and unknown\n\n\nData is generated through the likelihood function \n\\(p(X ;\\theta)\\)\n (if discrete) or \n\\(f(X ; \\theta)\\)\n (if continuous).\n\n\nNow we will be dealing with multiple candidate models, one for each value of \n\\(\\theta\\)\n\n\nWe will use \n\\(E_\\theta[h(X)]\\)\n to define the expectation of the random variable \n\\(h(X)\\)\n as a function of parameter \n\\(\\theta\\)\n.\n\n\nMLE\n\n\n\n\n\n\nBayesian statistical inference\n\uf0c1\n\n\nMaximum Likelihood Estimation (Clasical statistical inference)\n\uf0c1\n\n\n\n\n\n\n\n\nExample: Linear Regression as Maximum Likelihood\n\uf0c1\n\n\nBayesian statistical inference\n\uf0c1\n\n\n\n\nSummary of Bayesian Inference:\n\n\n\n\nWe start with a prior distribution \n\\(p_\\Theta\\)\n or \n\\(f_\\Theta\\)\n for the unknown random variable \n\\(\\Theta\\)\n.\n\n\nWe have a model \n\\(p_{X|\\Theta}\\)\n or \n\\(f_{X|\\Theta}\\)\n of the observation vector \n\\(X\\)\n.\n\n\nAfter observing the value \n\\(x\\)\n of \n\\(X\\)\n , we form the posterior distribution of \n\\(\\Theta\\)\n, using the appropriate version of Bayes' rule.\n\n\n\n\n\n\nTwo of the most popular estimators:\n\n\n\n\nMaximum a Posteriori Probability (MAP) estimator\n: Here, having observed \n\\(x\\)\n, we choose an estimate \n\\(\\hat{\\theta}\\)\n that maximizes the posterior\ndistribution over all \n\\(\\theta\\)\n. When posterior distribution \n\\(\\Theta\\)\n is discreate or continous then we define \n\\(\\hat{\\theta}\\)\n as follows:\n$$\n\\hat{\\theta}  = \\underset{\\theta}{\\operatorname{argmax}} p_{\\Theta|X}(\\theta|x)\n$$\n\n\n\n\n\\[\n\\hat{\\theta} = \\underset{\\theta}{\\operatorname{argmax}} f_{\\Theta|X}(\\theta|x)\n\\]\n\n\nIf \n\\(\\Theta\\)\n is continuous, the actual evaluation of the MAP estimate \n\\(\\theta\\)\n can some\u00ad times be carried out analytically; for example, if there are no constraints on \n\\(\\theta\\)\n, by setting to zero the derivative of \n\\(f_{\\Theta|X}(\\theta|x)\\)\n, or of \n\\(\\log f_{\\Theta|X}(\\theta|x)\\)\n, and solving for \n\\(\\theta\\)\n.\n\n\n\n\nThe MAP rule maximizes the overall probability of a correct decision over all decision rules \n\\(g\\)\n. \n$$\nP(g(X) = \\Theta) \\leq P(g_{MAP}=\\Theta)\n$$\nNote that this argument is mostly relevant when \n\\(\\Theta\\)\n is discrete. If \n\\(\\Theta\\)\n, when conditioned on \n\\(X = x\\)\n, is a continuous random variable. the probability of a correct decision is 0 under any rule.\n\n\n\n\nThe Conditional Expectation estimator\n: Here, we choose the estimate \n\\(\\hat{\\theta} = E[\\Theta | X = x ]\\)\n (In case of continuous expectation is calculated because probability of individual \n\\(\\theta\\)\n is zero in continuous probability space.).\n\n\n\n\nOur aim is to get the (\n\\(\\theta\\)\n, Probability)-plot where we have probability space for various value of \n\\(\\theta\\)\n. As describe below:\n\n\nIf the posterior distribution of \n\\(\\Theta\\)\n is symmetric around its (conditional) mean and unimodal (i.e. , has a single maximum) , the maximum occurs at the mean. Then, the MAP estimator coincides with the conditional expectation estimator. This is the case, for example, if the posterior distribution is guaranteed to be normal.\n\n\nBayesian least mean square:\n\uf0c1\n\n\nLeast mean squares (LMS) estimation: Select an estimator /fun\u00adction of the data that minimizes the mean squared error between the parameter and its estimate\n\n\nBayesian linear least mean square estimation:\n\uf0c1\n\n\nSelects an estimator which is a liner function of the data and minimizes the mean squared error between the parameter and its estimate.     \n\n\nSome cool problems/derivations:\n\uf0c1\n\n\n\n\nInference of common mean of normal random variables.\n\n\nBeta priors on the Bias of a coin.\n\n\nMulti parameter problems using sensor network.",
+            "title": "Inference"
+        },
+        {
+            "location": "/inference/#motivation-probability-vs-statistics",
+            "text": "What we want to do ? -- we want to determine some unknown quantity.  Statistics need to calculate some parameters to show that results are close to true value of the unknown however probability problem revolves around calculating the actual values. The difference between the  Bayesian  and  classical statistics :  Bayesian approach consider the unknown quantity as a random variable whereas the classical statistician will think of it as some constant value.",
+            "title": "Motivation: Probability V/S Statistics"
+        },
+        {
+            "location": "/inference/#important-definitions",
+            "text": "Here, first we give small definitions:  Model inference : a simple example   \\(y_i = x_i \\theta + W\\) , where learning  \\(\\theta\\)  is model inference and learning  \\(x_i\\)  from  \\(y_i\\)  is variable inference ( \\(\\theta\\)  is known). for example: consider a noisy channel where sometimes we want to know the system estimation (attenuation  \\(\\theta\\) ) or want to know the sound given  \\(y_i\\) .  variable inference  Estimate : it to refer to the numerical value  \\(\\hat{\\theta}\\)  that we choose to report on the basis of the actual observation  \\(x\\) . The value of  \\(\\hat{\\theta}\\)  is to be determined by applying some function  \\(g\\)  to the observation  \\(x\\) , resulting in  \\(\\hat{\\theta} = g(x)\\) .   Estimator : The random variable  \\(\\hat{\\Theta} = g(X)\\)  is called an estimator, and its realized value equals  \\(g(x)\\)  whenever the random variable  \\(X\\)  takes the value  \\(x\\) .  Empirical distribution : This contains the various measurements and data point. each data point is a random variable.  True distribution : when have some idea of the true distribution (can be approximated by a linear or polynomial regression ) then it is called the parametric setting, where as if we have no idea of true distribution accept it is some function of  \\(X\\) , as  \\(g(X)\\) , this is called the non-parametric setting.  Model distribution : After finishing the estimation process, we get some value of unknown quantity, in case of linear model we get slop and the intercept of the line to model  \\(y_i = x_i \\theta_1 + \\theta_2\\) .   Below, we give big (important) definitions:",
+            "title": "Important definitions:"
+        },
+        {
+            "location": "/inference/#point-estimate",
+            "text": "Point estimation is the attempt to provide the single \u201cbest\u201d prediction of somequantity of interest. In general the quantity of interest can be a single parameteror a vector of parameters in some parametric model, such as the weights in ourlinear regression example. To distinguish estimates of parameters from their true value, our conventionwill be to denote a point estimate of a parameter  \\(\\theta\\)  by  \\(\\hat{\\theta}\\) .  Let  \\({x^{(1)}, . . . , x^{(m)}}\\)  be a set of  \\(m\\)  independent and identically distributed data points. A point estimator or statistic is any function of the data:\n$$\n\\hat{\\theta_m} = g(x^{(1)}, . . . , x^{(m)}).\n$$",
+            "title": "Point estimate"
+        },
+        {
+            "location": "/inference/#function-estimation",
+            "text": "Sometimes we are interested in performing functionestimation (or function approximation). Here, we are trying to predict a variableygiven an input vectorx. We assume that there is a functionf(x) that describesthe approximate relationship betweenyandx. For example, we may assume that  \\(y=f(x) +\\epsilon\\) , where  \\(\\epsilon\\)  stands for the part of  \\(y\\)  that is not predictable from  \\(x\\) . In function estimation, we are interested in approximating  \\(f\\)  with a model or estimate  \\(\\hat{f}\\) . Function estimation is really just the same as estimating a parameter  \\(\\theta\\) ; the function estimator  \\(\\hat{f}\\)  is simply a point estimator in function space. The linear regression example and the polynomial regression example both illustrate scenarios that may be interpreted as either estimating a parameter  \\(w\\)  or estimating a function  \\(\\hat{f}\\)  mapping from  \\(x\\)  to  \\(y\\) .",
+            "title": "Function Estimation"
+        },
+        {
+            "location": "/inference/#hypothesis-testing",
+            "text": "An unknown parameter takes a finite number of values. One wants to find the best hypothesis based on the data. e.g. binary hypothesis problem or m-ary hypothesis problem.",
+            "title": "Hypothesis testing"
+        },
+        {
+            "location": "/inference/#non-parametric",
+            "text": "If we have no idea of true distribution accept it is some function of  \\(X\\) , as  \\(g(X)\\) , this is called the non-parametric setting.",
+            "title": "Non-parametric"
+        },
+        {
+            "location": "/inference/#statistical-inference",
+            "text": "The problems are divided as:   Clasical statistical inference  Bayesian statistical inference",
+            "title": "Statistical Inference"
+        },
+        {
+            "location": "/inference/#clasical-statistical-inference",
+            "text": "The parameter(s)  \\(\\theta\\)  is fixed and unknown  Data is generated through the likelihood function  \\(p(X ;\\theta)\\)  (if discrete) or  \\(f(X ; \\theta)\\)  (if continuous).  Now we will be dealing with multiple candidate models, one for each value of  \\(\\theta\\)  We will use  \\(E_\\theta[h(X)]\\)  to define the expectation of the random variable  \\(h(X)\\)  as a function of parameter  \\(\\theta\\) .  MLE",
+            "title": "Clasical statistical inference"
+        },
+        {
+            "location": "/inference/#bayesian-statistical-inference",
+            "text": "",
+            "title": "Bayesian statistical inference"
+        },
+        {
+            "location": "/inference/#maximum-likelihood-estimation-clasical-statistical-inference",
+            "text": "",
+            "title": "Maximum Likelihood Estimation (Clasical statistical inference)"
+        },
+        {
+            "location": "/inference/#example-linear-regression-as-maximum-likelihood",
+            "text": "",
+            "title": "Example: Linear Regression as Maximum Likelihood"
+        },
+        {
+            "location": "/inference/#bayesian-statistical-inference_1",
+            "text": "Summary of Bayesian Inference:   We start with a prior distribution  \\(p_\\Theta\\)  or  \\(f_\\Theta\\)  for the unknown random variable  \\(\\Theta\\) .  We have a model  \\(p_{X|\\Theta}\\)  or  \\(f_{X|\\Theta}\\)  of the observation vector  \\(X\\) .  After observing the value  \\(x\\)  of  \\(X\\)  , we form the posterior distribution of  \\(\\Theta\\) , using the appropriate version of Bayes' rule.    Two of the most popular estimators:   Maximum a Posteriori Probability (MAP) estimator : Here, having observed  \\(x\\) , we choose an estimate  \\(\\hat{\\theta}\\)  that maximizes the posterior\ndistribution over all  \\(\\theta\\) . When posterior distribution  \\(\\Theta\\)  is discreate or continous then we define  \\(\\hat{\\theta}\\)  as follows:\n$$\n\\hat{\\theta}  = \\underset{\\theta}{\\operatorname{argmax}} p_{\\Theta|X}(\\theta|x)\n$$   \\[\n\\hat{\\theta} = \\underset{\\theta}{\\operatorname{argmax}} f_{\\Theta|X}(\\theta|x)\n\\]  If  \\(\\Theta\\)  is continuous, the actual evaluation of the MAP estimate  \\(\\theta\\)  can some\u00ad times be carried out analytically; for example, if there are no constraints on  \\(\\theta\\) , by setting to zero the derivative of  \\(f_{\\Theta|X}(\\theta|x)\\) , or of  \\(\\log f_{\\Theta|X}(\\theta|x)\\) , and solving for  \\(\\theta\\) .   The MAP rule maximizes the overall probability of a correct decision over all decision rules  \\(g\\) . \n$$\nP(g(X) = \\Theta) \\leq P(g_{MAP}=\\Theta)\n$$\nNote that this argument is mostly relevant when  \\(\\Theta\\)  is discrete. If  \\(\\Theta\\) , when conditioned on  \\(X = x\\) , is a continuous random variable. the probability of a correct decision is 0 under any rule.   The Conditional Expectation estimator : Here, we choose the estimate  \\(\\hat{\\theta} = E[\\Theta | X = x ]\\)  (In case of continuous expectation is calculated because probability of individual  \\(\\theta\\)  is zero in continuous probability space.).   Our aim is to get the ( \\(\\theta\\) , Probability)-plot where we have probability space for various value of  \\(\\theta\\) . As describe below:  If the posterior distribution of  \\(\\Theta\\)  is symmetric around its (conditional) mean and unimodal (i.e. , has a single maximum) , the maximum occurs at the mean. Then, the MAP estimator coincides with the conditional expectation estimator. This is the case, for example, if the posterior distribution is guaranteed to be normal.",
+            "title": "Bayesian statistical inference"
+        },
+        {
+            "location": "/inference/#bayesian-least-mean-square",
+            "text": "Least mean squares (LMS) estimation: Select an estimator /fun\u00adction of the data that minimizes the mean squared error between the parameter and its estimate",
+            "title": "Bayesian least mean square:"
+        },
+        {
+            "location": "/inference/#bayesian-linear-least-mean-square-estimation",
+            "text": "Selects an estimator which is a liner function of the data and minimizes the mean squared error between the parameter and its estimate.",
+            "title": "Bayesian linear least mean square estimation:"
+        },
+        {
+            "location": "/inference/#some-cool-problemsderivations",
+            "text": "Inference of common mean of normal random variables.  Beta priors on the Bias of a coin.  Multi parameter problems using sensor network.",
+            "title": "Some cool problems/derivations:"
+        },
+        {
+            "location": "/goodFellow6/",
+            "text": "Deep Feedforward Networks\n\uf0c1\n\n\n\n\n\n\nExample: learning XOR\n\uf0c1\n\n\n\n\n\n\n\n\n\n\nGradient based learning\n\uf0c1\n\n\nLearning Conditional Distributions with Maximum Likelihood\n\uf0c1\n\n\nMost modern neural networks are trained using maximum likelihood. This meansthat the cost function is simply the negative log-likelihood, equivalently describedas the cross-entropy between the training data and the model distribution. Thiscost function is given by:\n\n\n\\[\nJ(\\theta) = - E_{x,y \\approx \\hat{p}_{data}} \\log p_{model} (y|x)\n\\]\n\n\nLearning Conditional Statistics\n\uf0c1\n\n\nInstead of learning a full probability distribution \n\\(p(y | x;\\theta)\\)\n, we often want tolearn just one conditional statistic of y given x.\n\n\nFor example, we may have a predictor \n\\(f(x;\\theta)\\)\n that we wish to employ to predictthe mean of \n\\(y\\)\n. From this point of view, wecan view the cost function as being afunctionalrather than just a function. \n\n\nAnother example, we can design the cost functional to have itsminimum lie on the function that mapsxto the expected value of \n\\(y\\)\n given \n\\(x\\)\n. Solving an optimization problem with respect to a function requires a mathematicaltool called calculus of variations.\n\n\n\n\nUnfortunately, mean squared error and mean absolute error often lead to poor results when used with gradient-based optimization. Some output units that saturate produce very small gradients when combined with these cost functions.This is one reason that the cross-entropy cost function is more popular than mean squared error or mean absolute error, even when it is not necessary to estimate an entire distribution \n\\(p(y | x)\\)\n.\n\n\nOutput type\n\uf0c1\n\n\nThe choice of cost function is tightly coupled with the choice of output unit. Mostof the time, we simply use the cross-entropy between the data distribution and themodel distribution. The choice of how to represent the output then determinesthe form of the cross-entropy function.Any kind of neural network unit that may be used as an output can also beused as a hidden unit. Here, we focus on the use of these units as outputs of themodel, but in principle they can be used internally as well.\n\n\n\n\n\n\nHiddent units\n\uf0c1\n\n\nmost hidden units can be described as acceptinga vector of inputsx, computing an a\ufb03ne transformation \n\\(z=W^T x+b\\)\n, and then applying an element-wise nonlinear function \n\\(g(z)\\)\n. Most hidden units are distinguished from each other only by the choice of the form of the activation function \n\\(g(z)\\)\n.\n\n\nRecti\ufb01ed linear units use the activation function \n\\(g(z) = max \\{\\theta, z\\}\\)\n. Note that it is not differentiable at \n\\(z=0\\)\n because the left and the right limits are not equal. However in practice, we can safely disregard the non differentiability of the hidden unit activation functions. A varient of Relu is leaky relu which is differentiable. \n\n\nPrior tp Relu, most neural networks used logistic sigmoid activation function \n\\(g(z)=\\sigma (z)\\)\n or the hyperbolic tengent activation function \n\\(g(z)=tanh(z)\\)\n. These activation function are closely related because \n\\(tanh(z) = 2 \\sigma (2z) - 1\\)\n.\n\n\nUnlike piecewise linear units, sigmoidal units saturate across most of their domain\u2014they saturate to a high value when \n\\(z\\)\n is very positive, saturate to a low value whenzis very negative, and are onlystrongly sensitive to their input when \n\\(z\\)\n is near \n\\(\\theta\\)\n. The widespread saturation of sigmoidal units can make gradient-based learning very difficult. For this reason,their use as hidden units in feedforward networks is now discouraged. However, Recurrent networks, many probabilistic models, and some autoencoders have additional requirements that rule out the use of piece wise linear activation functions and make sigmoidal units more appealing despite the drawbacks of saturation.\n\n\nUniversal approximation theorem\n\uf0c1\n\n\nThe universal approximation theorem(Horniket al., 1989; Cybenko, 1989) states that a feedforward network with a linear outputlayer and at least one hidden layer with any \u201csquashing\u201d activation function (suchas the logistic sigmoid activation function) can approximate any Borel measurablefunction from one \ufb01nite-dimensional space to another with any desired nonzeroamount of error, provided that the network is given enough hidden units. Thederivatives of the feedforward network can also approximate the derivatives of thefunction arbitrarily well (Hornik et al., 1990).\n\n\nIn summary, a feedforward network with a single layer is su\ufb03cient to representany function, but the layer may be infeasibly large and may fail to learn andgeneralize correctly. In many circumstances, using deeper models can reduce thenumber of units required to represent the desired function and can reduce theamount of generalization error.\n\n\n\nBackpropagation and other differentiation\n\uf0c1\n\n\n\nUsually we apply the back-propagation algorithm to tensors of arbitrary di-mensionality, not merely to vectors. Conceptually, this is exactly the same asback-propagation with vectors. The only difference is how the numbers are ar-ranged in a grid to form a tensor. We could imagine \ufb02attening each tensor intoa vector before we run back-propagation, computing a vector-valued gradient,and then reshaping the gradient back into a tensor. In this rearranged view,back-propagation is still just multiplying Jacobians by gradients.\n\n\n\n\n\n\n\n\n\n\n\nHistorical notes\n\uf0c1",
+            "title": "Deep Feedfroward networks 6"
+        },
+        {
+            "location": "/goodFellow6/#deep-feedforward-networks",
+            "text": "",
+            "title": "Deep Feedforward Networks"
+        },
+        {
+            "location": "/goodFellow6/#example-learning-xor",
+            "text": "",
+            "title": "Example: learning XOR"
+        },
+        {
+            "location": "/goodFellow6/#gradient-based-learning",
+            "text": "",
+            "title": "Gradient based learning"
+        },
+        {
+            "location": "/goodFellow6/#learning-conditional-distributions-with-maximum-likelihood",
+            "text": "Most modern neural networks are trained using maximum likelihood. This meansthat the cost function is simply the negative log-likelihood, equivalently describedas the cross-entropy between the training data and the model distribution. Thiscost function is given by:  \\[\nJ(\\theta) = - E_{x,y \\approx \\hat{p}_{data}} \\log p_{model} (y|x)\n\\]",
+            "title": "Learning Conditional Distributions with Maximum Likelihood"
+        },
+        {
+            "location": "/goodFellow6/#learning-conditional-statistics",
+            "text": "Instead of learning a full probability distribution  \\(p(y | x;\\theta)\\) , we often want tolearn just one conditional statistic of y given x.  For example, we may have a predictor  \\(f(x;\\theta)\\)  that we wish to employ to predictthe mean of  \\(y\\) . From this point of view, wecan view the cost function as being afunctionalrather than just a function.   Another example, we can design the cost functional to have itsminimum lie on the function that mapsxto the expected value of  \\(y\\)  given  \\(x\\) . Solving an optimization problem with respect to a function requires a mathematicaltool called calculus of variations.   Unfortunately, mean squared error and mean absolute error often lead to poor results when used with gradient-based optimization. Some output units that saturate produce very small gradients when combined with these cost functions.This is one reason that the cross-entropy cost function is more popular than mean squared error or mean absolute error, even when it is not necessary to estimate an entire distribution  \\(p(y | x)\\) .",
+            "title": "Learning Conditional Statistics"
+        },
+        {
+            "location": "/goodFellow6/#output-type",
+            "text": "The choice of cost function is tightly coupled with the choice of output unit. Mostof the time, we simply use the cross-entropy between the data distribution and themodel distribution. The choice of how to represent the output then determinesthe form of the cross-entropy function.Any kind of neural network unit that may be used as an output can also beused as a hidden unit. Here, we focus on the use of these units as outputs of themodel, but in principle they can be used internally as well.",
+            "title": "Output type"
+        },
+        {
+            "location": "/goodFellow6/#hiddent-units",
+            "text": "most hidden units can be described as acceptinga vector of inputsx, computing an a\ufb03ne transformation  \\(z=W^T x+b\\) , and then applying an element-wise nonlinear function  \\(g(z)\\) . Most hidden units are distinguished from each other only by the choice of the form of the activation function  \\(g(z)\\) .  Recti\ufb01ed linear units use the activation function  \\(g(z) = max \\{\\theta, z\\}\\) . Note that it is not differentiable at  \\(z=0\\)  because the left and the right limits are not equal. However in practice, we can safely disregard the non differentiability of the hidden unit activation functions. A varient of Relu is leaky relu which is differentiable.   Prior tp Relu, most neural networks used logistic sigmoid activation function  \\(g(z)=\\sigma (z)\\)  or the hyperbolic tengent activation function  \\(g(z)=tanh(z)\\) . These activation function are closely related because  \\(tanh(z) = 2 \\sigma (2z) - 1\\) . \nUnlike piecewise linear units, sigmoidal units saturate across most of their domain\u2014they saturate to a high value when  \\(z\\)  is very positive, saturate to a low value whenzis very negative, and are onlystrongly sensitive to their input when  \\(z\\)  is near  \\(\\theta\\) . The widespread saturation of sigmoidal units can make gradient-based learning very difficult. For this reason,their use as hidden units in feedforward networks is now discouraged. However, Recurrent networks, many probabilistic models, and some autoencoders have additional requirements that rule out the use of piece wise linear activation functions and make sigmoidal units more appealing despite the drawbacks of saturation.",
+            "title": "Hiddent units"
+        },
+        {
+            "location": "/goodFellow6/#universal-approximation-theorem",
+            "text": "The universal approximation theorem(Horniket al., 1989; Cybenko, 1989) states that a feedforward network with a linear outputlayer and at least one hidden layer with any \u201csquashing\u201d activation function (suchas the logistic sigmoid activation function) can approximate any Borel measurablefunction from one \ufb01nite-dimensional space to another with any desired nonzeroamount of error, provided that the network is given enough hidden units. Thederivatives of the feedforward network can also approximate the derivatives of thefunction arbitrarily well (Hornik et al., 1990).  In summary, a feedforward network with a single layer is su\ufb03cient to representany function, but the layer may be infeasibly large and may fail to learn andgeneralize correctly. In many circumstances, using deeper models can reduce thenumber of units required to represent the desired function and can reduce theamount of generalization error.",
+            "title": "Universal approximation theorem"
+        },
+        {
+            "location": "/goodFellow6/#backpropagation-and-other-differentiation",
+            "text": "Usually we apply the back-propagation algorithm to tensors of arbitrary di-mensionality, not merely to vectors. Conceptually, this is exactly the same asback-propagation with vectors. The only difference is how the numbers are ar-ranged in a grid to form a tensor. We could imagine \ufb02attening each tensor intoa vector before we run back-propagation, computing a vector-valued gradient,and then reshaping the gradient back into a tensor. In this rearranged view,back-propagation is still just multiplying Jacobians by gradients.",
+            "title": "Backpropagation and other differentiation"
+        },
+        {
+            "location": "/goodFellow6/#historical-notes",
+            "text": "",
+            "title": "Historical notes"
+        },
+        {
+            "location": "/goodFellow7/",
+            "text": "Dataset Augmentation\n\uf0c1\n\n\nNoise robustness\n\uf0c1\n\n\nSemi-supervised learning\n\uf0c1\n\n\nMulti-task learning\n\uf0c1\n\n\nEarly Stopping.\n\uf0c1\n\n\nAdversarial Training\n\uf0c1\n\n\nManifold Tangent Classifier\n\uf0c1",
+            "title": "Regularization 7"
+        },
+        {
+            "location": "/goodFellow7/#dataset-augmentation",
+            "text": "",
+            "title": "Dataset Augmentation"
+        },
+        {
+            "location": "/goodFellow7/#noise-robustness",
+            "text": "",
+            "title": "Noise robustness"
+        },
+        {
+            "location": "/goodFellow7/#semi-supervised-learning",
+            "text": "",
+            "title": "Semi-supervised learning"
+        },
+        {
+            "location": "/goodFellow7/#multi-task-learning",
+            "text": "",
+            "title": "Multi-task learning"
+        },
+        {
+            "location": "/goodFellow7/#early-stopping",
+            "text": "",
+            "title": "Early Stopping."
+        },
+        {
+            "location": "/goodFellow7/#adversarial-training",
+            "text": "",
+            "title": "Adversarial Training"
+        },
+        {
+            "location": "/goodFellow7/#manifold-tangent-classifier",
+            "text": "",
+            "title": "Manifold Tangent Classifier"
+        },
+        {
+            "location": "/goodFellow8/",
+            "text": "How Learning Differs From Pure Optimization\n\uf0c1\n\n\nChallenges In Neural Network Optimization\n\uf0c1\n\n\nBasic Algorithms\n\uf0c1\n\n\nParameter Initialization Strategies\n\uf0c1\n\n\nAlgorithm With Adaptive Learning Rates\n\uf0c1\n\n\nApproximate Second Order Methods\n\uf0c1\n\n\nOptimization Strategies And Meta Algorithms\n\uf0c1",
+            "title": "Optimization for Deep-models 8"
+        },
+        {
+            "location": "/goodFellow8/#how-learning-differs-from-pure-optimization",
+            "text": "",
+            "title": "How Learning Differs From Pure Optimization"
+        },
+        {
+            "location": "/goodFellow8/#challenges-in-neural-network-optimization",
+            "text": "",
+            "title": "Challenges In Neural Network Optimization"
+        },
+        {
+            "location": "/goodFellow8/#basic-algorithms",
+            "text": "",
+            "title": "Basic Algorithms"
+        },
+        {
+            "location": "/goodFellow8/#parameter-initialization-strategies",
+            "text": "",
+            "title": "Parameter Initialization Strategies"
+        },
+        {
+            "location": "/goodFellow8/#algorithm-with-adaptive-learning-rates",
+            "text": "",
+            "title": "Algorithm With Adaptive Learning Rates"
+        },
+        {
+            "location": "/goodFellow8/#approximate-second-order-methods",
+            "text": "",
+            "title": "Approximate Second Order Methods"
+        },
+        {
+            "location": "/goodFellow8/#optimization-strategies-and-meta-algorithms",
+            "text": "",
+            "title": "Optimization Strategies And Meta Algorithms"
+        },
+        {
+            "location": "/goodFellow9/",
+            "text": "The Convolution Operation\n\uf0c1\n\n\nMotivation\n\uf0c1\n\n\nPooling\n\uf0c1\n\n\nConvolution And Pooling as an Infinitely Strong Prior\n\uf0c1\n\n\nVariants of the Basic Convolution Function\n\uf0c1\n\n\nStructured Outputs\n\uf0c1\n\n\nData Types\n\uf0c1\n\n\nEfficient Convolution Algorithms\n\uf0c1\n\n\nRandom or Unsupervised Features\n\uf0c1\n\n\nThe Neuroscientific Basis For Convolutional Network\n\uf0c1\n\n\nConvolutional Networks And The History Of Deep Learning\n\uf0c1",
+            "title": "Convolutional Network 9"
+        },
+        {
+            "location": "/goodFellow9/#the-convolution-operation",
+            "text": "",
+            "title": "The Convolution Operation"
+        },
+        {
+            "location": "/goodFellow9/#motivation",
+            "text": "",
+            "title": "Motivation"
+        },
+        {
+            "location": "/goodFellow9/#pooling",
+            "text": "",
+            "title": "Pooling"
+        },
+        {
+            "location": "/goodFellow9/#convolution-and-pooling-as-an-infinitely-strong-prior",
+            "text": "",
+            "title": "Convolution And Pooling as an Infinitely Strong Prior"
+        },
+        {
+            "location": "/goodFellow9/#variants-of-the-basic-convolution-function",
+            "text": "",
+            "title": "Variants of the Basic Convolution Function"
+        },
+        {
+            "location": "/goodFellow9/#structured-outputs",
+            "text": "",
+            "title": "Structured Outputs"
+        },
+        {
+            "location": "/goodFellow9/#data-types",
+            "text": "",
+            "title": "Data Types"
+        },
+        {
+            "location": "/goodFellow9/#efficient-convolution-algorithms",
+            "text": "",
+            "title": "Efficient Convolution Algorithms"
+        },
+        {
+            "location": "/goodFellow9/#random-or-unsupervised-features",
+            "text": "",
+            "title": "Random or Unsupervised Features"
+        },
+        {
+            "location": "/goodFellow9/#the-neuroscientific-basis-for-convolutional-network",
+            "text": "",
+            "title": "The Neuroscientific Basis For Convolutional Network"
+        },
+        {
+            "location": "/goodFellow9/#convolutional-networks-and-the-history-of-deep-learning",
+            "text": "",
+            "title": "Convolutional Networks And The History Of Deep Learning"
+        },
+        {
+            "location": "/spectral/",
+            "text": "",
+            "title": "SpectralClustering"
+        },
+        {
+            "location": "/gan/",
+            "text": "The notes shoud be read in the ordering.",
+            "title": "GAN"
+        }
+    ]
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Mastan">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Inference - My notes</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../docskimmer.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Inference";
+    var mkdocs_page_input_path = "inference.md";
+    var mkdocs_page_url = "/inference/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gilbert/">Linear Algebra and Differential Eq.</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../calculus/">Calculus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../manifold/">ManifoldBasics</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow4/">Numerical Computation 4</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow5/">Machine learning Basics 5</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Inference</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#motivation-probability-vs-statistics">Motivation: Probability V/S Statistics</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#important-definitions">Important definitions:</a></li>
+        
+            <li><a class="toctree-l3" href="#maximum-likelihood-estimation-clasical-statistical-inference">Maximum Likelihood Estimation (Clasical statistical inference)</a></li>
+        
+            <li><a class="toctree-l3" href="#bayesian-statistical-inference_1">Bayesian statistical inference</a></li>
+        
+            <li><a class="toctree-l3" href="#some-cool-problemsderivations">Some cool problems/derivations:</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow6/">Deep Feedfroward networks 6</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow7/">Regularization 7</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow8/">Optimization for Deep-models 8</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow9/">Convolutional Network 9</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../spectral/">SpectralClustering</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gan/">GAN</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Inference</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Checking latex. <span class="arithmatex">\(<span class="arithmatex">\(x\)</span>\)</span> </p>
+<h1 id="motivation-probability-vs-statistics">Motivation: Probability V/S Statistics<a class="headerlink" href="#motivation-probability-vs-statistics" title="Permanent link"></a></h1>
+<p><strong><em>What we want to do ? -- we want to determine some unknown quantity.</em></strong></p>
+<p>Statistics need to calculate some parameters to show that results are close to true value of the unknown however probability problem revolves around calculating the actual values. The difference between the <strong>Bayesian</strong> and <strong>classical statistics</strong>:  Bayesian approach consider the unknown quantity as a random variable whereas the classical statistician will think of it as some constant value.</p>
+<h2 id="important-definitions">Important definitions:<a class="headerlink" href="#important-definitions" title="Permanent link"></a></h2>
+<p><strong><em>Here, first we give small definitions:</em></strong></p>
+<p><strong>Model inference</strong>: a simple example  <span class="arithmatex">\(y_i = x_i \theta + W\)</span>, where learning <span class="arithmatex">\(\theta\)</span> is model inference and learning <span class="arithmatex">\(x_i\)</span> from <span class="arithmatex">\(y_i\)</span> is variable inference (<span class="arithmatex">\(\theta\)</span> is known). for example: consider a noisy channel where sometimes we want to know the system estimation (attenuation <span class="arithmatex">\(\theta\)</span>) or want to know the sound given <span class="arithmatex">\(y_i\)</span>.</p>
+<p><strong>variable inference</strong></p>
+<p><strong>Estimate</strong>: it to refer to the numerical value <span class="arithmatex">\(\hat{\theta}\)</span> that we choose to report on the basis of the actual observation <span class="arithmatex">\(x\)</span>. The value of <span class="arithmatex">\(\hat{\theta}\)</span> is to be determined by applying some function <span class="arithmatex">\(g\)</span> to the observation <span class="arithmatex">\(x\)</span>, resulting in <span class="arithmatex">\(\hat{\theta} = g(x)\)</span>. </p>
+<p><strong>Estimator</strong>: The random variable <span class="arithmatex">\(\hat{\Theta} = g(X)\)</span> is called an estimator, and its realized value equals <span class="arithmatex">\(g(x)\)</span> whenever the random variable <span class="arithmatex">\(X\)</span> takes the value <span class="arithmatex">\(x\)</span>.</p>
+<p><strong>Empirical distribution</strong>: This contains the various measurements and data point. each data point is a random variable.</p>
+<p><strong>True distribution</strong>: when have some idea of the true distribution (can be approximated by a linear or polynomial regression ) then it is called the parametric setting, where as if we have no idea of true distribution accept it is some function of <span class="arithmatex">\(X\)</span>, as <span class="arithmatex">\(g(X)\)</span>, this is called the non-parametric setting.</p>
+<p><strong>Model distribution</strong>: After finishing the estimation process, we get some value of unknown quantity, in case of linear model we get slop and the intercept of the line to model <span class="arithmatex">\(y_i = x_i \theta_1 + \theta_2\)</span>. </p>
+<p><strong><em>Below, we give big (important) definitions:</em></strong></p>
+<h4 id="point-estimate">Point estimate<a class="headerlink" href="#point-estimate" title="Permanent link"></a></h4>
+<p>Point estimation is the attempt to provide the single “best” prediction of somequantity of interest. In general the quantity of interest can be a single parameteror a vector of parameters in some parametric model, such as the weights in ourlinear regression example. To distinguish estimates of parameters from their true value, our conventionwill be to denote a point estimate of a parameter <span class="arithmatex">\(\theta\)</span> by <span class="arithmatex">\(\hat{\theta}\)</span>.</p>
+<p>Let <span class="arithmatex">\({x^{(1)}, . . . , x^{(m)}}\)</span> be a set of <span class="arithmatex">\(m\)</span> independent and identically distributed data points. A point estimator or statistic is any function of the data:
+$$
+\hat{\theta_m} = g(x^{(1)}, . . . , x^{(m)}).
+$$</p>
+<h4 id="function-estimation">Function Estimation<a class="headerlink" href="#function-estimation" title="Permanent link"></a></h4>
+<p>Sometimes we are interested in performing functionestimation (or function approximation). Here, we are trying to predict a variableygiven an input vectorx. We assume that there is a functionf(x) that describesthe approximate relationship betweenyandx. For example, we may assume that <span class="arithmatex">\(y=f(x) +\epsilon\)</span>, where <span class="arithmatex">\(\epsilon\)</span> stands for the part of <span class="arithmatex">\(y\)</span> that is not predictable from <span class="arithmatex">\(x\)</span>. In function estimation, we are interested in approximating <span class="arithmatex">\(f\)</span> with a model or estimate <span class="arithmatex">\(\hat{f}\)</span>. Function estimation is really just the same as estimating a parameter <span class="arithmatex">\(\theta\)</span>; the function estimator <span class="arithmatex">\(\hat{f}\)</span> is simply a point estimator in function space. The linear regression example and the polynomial regression example both illustrate scenarios that may be interpreted as either estimating a parameter <span class="arithmatex">\(w\)</span> or estimating a function <span class="arithmatex">\(\hat{f}\)</span> mapping from <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>.</p>
+<h4 id="hypothesis-testing">Hypothesis testing<a class="headerlink" href="#hypothesis-testing" title="Permanent link"></a></h4>
+<p>An unknown parameter takes a finite number of values. One wants to find the best hypothesis based on the data. e.g. binary hypothesis problem or m-ary hypothesis problem. </p>
+<h4 id="non-parametric">Non-parametric<a class="headerlink" href="#non-parametric" title="Permanent link"></a></h4>
+<p>If we have no idea of true distribution accept it is some function of <span class="arithmatex">\(X\)</span>, as <span class="arithmatex">\(g(X)\)</span>, this is called the non-parametric setting.</p>
+<h4 id="statistical-inference">Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permanent link"></a></h4>
+<p>The problems are divided as:</p>
+<ul>
+<li>Clasical statistical inference</li>
+<li>Bayesian statistical inference</li>
+</ul>
+<h5 id="clasical-statistical-inference">Clasical statistical inference<a class="headerlink" href="#clasical-statistical-inference" title="Permanent link"></a></h5>
+<ul>
+<li>The parameter(s) <span class="arithmatex">\(\theta\)</span> is fixed and unknown</li>
+<li>Data is generated through the likelihood function <span class="arithmatex">\(p(X ;\theta)\)</span> (if discrete) or <span class="arithmatex">\(f(X ; \theta)\)</span> (if continuous).</li>
+<li>Now we will be dealing with multiple candidate models, one for each value of <span class="arithmatex">\(\theta\)</span></li>
+<li>We will use <span class="arithmatex">\(E_\theta[h(X)]\)</span> to define the expectation of the random variable <span class="arithmatex">\(h(X)\)</span> as a function of parameter <span class="arithmatex">\(\theta\)</span>.</li>
+<li>MLE</li>
+</ul>
+<p><img alt="image" src="../images/ClassicalParamEstimation.png" /></p>
+<h5 id="bayesian-statistical-inference">Bayesian statistical inference<a class="headerlink" href="#bayesian-statistical-inference" title="Permanent link"></a></h5>
+<h2 id="maximum-likelihood-estimation-clasical-statistical-inference">Maximum Likelihood Estimation (Clasical statistical inference)<a class="headerlink" href="#maximum-likelihood-estimation-clasical-statistical-inference" title="Permanent link"></a></h2>
+<p><img alt="image" src="../images/ml1.png" />
+<img alt="image" src="../images/ml2.png" />
+<img alt="image" src="../images/ml3.png" /></p>
+<h3 id="example-linear-regression-as-maximum-likelihood">Example: Linear Regression as Maximum Likelihood<a class="headerlink" href="#example-linear-regression-as-maximum-likelihood" title="Permanent link"></a></h3>
+<h2 id="bayesian-statistical-inference_1">Bayesian statistical inference<a class="headerlink" href="#bayesian-statistical-inference_1" title="Permanent link"></a></h2>
+<p><img alt="image" src="../images/bayesianInf1.png" /></p>
+<p><strong>Summary of Bayesian Inference:</strong></p>
+<ul>
+<li>We start with a prior distribution <span class="arithmatex">\(p_\Theta\)</span> or <span class="arithmatex">\(f_\Theta\)</span> for the unknown random variable <span class="arithmatex">\(\Theta\)</span>.</li>
+<li>We have a model <span class="arithmatex">\(p_{X|\Theta}\)</span> or <span class="arithmatex">\(f_{X|\Theta}\)</span> of the observation vector <span class="arithmatex">\(X\)</span>.</li>
+<li>After observing the value <span class="arithmatex">\(x\)</span> of <span class="arithmatex">\(X\)</span> , we form the posterior distribution of <span class="arithmatex">\(\Theta\)</span>, using the appropriate version of Bayes' rule.</li>
+</ul>
+<p><img alt="image" src="../images/versionOfBayesRule.png" /></p>
+<p><strong>Two of the most popular estimators:</strong></p>
+<ul>
+<li><strong>Maximum a Posteriori Probability (MAP) estimator</strong>: Here, having observed <span class="arithmatex">\(x\)</span>, we choose an estimate <span class="arithmatex">\(\hat{\theta}\)</span> that maximizes the posterior
+distribution over all <span class="arithmatex">\(\theta\)</span>. When posterior distribution <span class="arithmatex">\(\Theta\)</span> is discreate or continous then we define <span class="arithmatex">\(\hat{\theta}\)</span> as follows:
+$$
+\hat{\theta}  = \underset{\theta}{\operatorname{argmax}} p_{\Theta|X}(\theta|x)
+$$</li>
+</ul>
+<div class="arithmatex">\[
+\hat{\theta} = \underset{\theta}{\operatorname{argmax}} f_{\Theta|X}(\theta|x)
+\]</div>
+<p>If <span class="arithmatex">\(\Theta\)</span> is continuous, the actual evaluation of the MAP estimate <span class="arithmatex">\(\theta\)</span> can some­ times be carried out analytically; for example, if there are no constraints on <span class="arithmatex">\(\theta\)</span>, by setting to zero the derivative of <span class="arithmatex">\(f_{\Theta|X}(\theta|x)\)</span>, or of <span class="arithmatex">\(\log f_{\Theta|X}(\theta|x)\)</span>, and solving for <span class="arithmatex">\(\theta\)</span>.</p>
+<p><img alt="image" src="../images/mapRule.png" /></p>
+<p>The MAP rule maximizes the overall probability of a correct decision over all decision rules <span class="arithmatex">\(g\)</span>. 
+$$
+P(g(X) = \Theta) \leq P(g_{MAP}=\Theta)
+$$
+Note that this argument is mostly relevant when <span class="arithmatex">\(\Theta\)</span> is discrete. If <span class="arithmatex">\(\Theta\)</span>, when conditioned on <span class="arithmatex">\(X = x\)</span>, is a continuous random variable. the probability of a correct decision is 0 under any rule.</p>
+<ul>
+<li><strong>The Conditional Expectation estimator</strong>: Here, we choose the estimate <span class="arithmatex">\(\hat{\theta} = E[\Theta | X = x ]\)</span> (In case of continuous expectation is calculated because probability of individual <span class="arithmatex">\(\theta\)</span> is zero in continuous probability space.).</li>
+</ul>
+<p>Our aim is to get the (<span class="arithmatex">\(\theta\)</span>, Probability)-plot where we have probability space for various value of <span class="arithmatex">\(\theta\)</span>. As describe below:</p>
+<p>If the posterior distribution of <span class="arithmatex">\(\Theta\)</span> is symmetric around its (conditional) mean and unimodal (i.e. , has a single maximum) , the maximum occurs at the mean. Then, the MAP estimator coincides with the conditional expectation estimator. This is the case, for example, if the posterior distribution is guaranteed to be normal.</p>
+<h3 id="bayesian-least-mean-square">Bayesian least mean square:<a class="headerlink" href="#bayesian-least-mean-square" title="Permanent link"></a></h3>
+<p>Least mean squares (LMS) estimation: Select an estimator /fun­ction of the data that minimizes the mean squared error between the parameter and its estimate</p>
+<h3 id="bayesian-linear-least-mean-square-estimation">Bayesian linear least mean square estimation:<a class="headerlink" href="#bayesian-linear-least-mean-square-estimation" title="Permanent link"></a></h3>
+<p>Selects an estimator which is a liner function of the data and minimizes the mean squared error between the parameter and its estimate.     </p>
+<h2 id="some-cool-problemsderivations">Some cool problems/derivations:<a class="headerlink" href="#some-cool-problemsderivations" title="Permanent link"></a></h2>
+<ul>
+<li>Inference of common mean of normal random variables.</li>
+<li>Beta priors on the Bias of a coin.</li>
+<li>Multi parameter problems using sensor network.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../goodFellow6/" class="btn btn-neutral float-right" title="Deep Feedfroward networks 6">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../goodFellow5/" class="btn btn-neutral" title="Machine learning Basics 5"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../goodFellow5/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../goodFellow6/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>

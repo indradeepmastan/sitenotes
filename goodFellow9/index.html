@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Mastan">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Convolutional Network 9 - My notes</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../docskimmer.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Convolutional Network 9";
+    var mkdocs_page_input_path = "goodFellow9.md";
+    var mkdocs_page_url = "/goodFellow9/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gilbert/">Linear Algebra and Differential Eq.</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../calculus/">Calculus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../manifold/">ManifoldBasics</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow4/">Numerical Computation 4</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow5/">Machine learning Basics 5</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../inference/">Inference</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow6/">Deep Feedfroward networks 6</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow7/">Regularization 7</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../goodFellow8/">Optimization for Deep-models 8</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Convolutional Network 9</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#the-convolution-operation">The Convolution Operation</a></li>
+    
+
+    <li class="toctree-l2"><a href="#motivation">Motivation</a></li>
+    
+
+    <li class="toctree-l2"><a href="#pooling">Pooling</a></li>
+    
+
+    <li class="toctree-l2"><a href="#convolution-and-pooling-as-an-infinitely-strong-prior">Convolution And Pooling as an Infinitely Strong Prior</a></li>
+    
+
+    <li class="toctree-l2"><a href="#variants-of-the-basic-convolution-function">Variants of the Basic Convolution Function</a></li>
+    
+
+    <li class="toctree-l2"><a href="#structured-outputs">Structured Outputs</a></li>
+    
+
+    <li class="toctree-l2"><a href="#data-types">Data Types</a></li>
+    
+
+    <li class="toctree-l2"><a href="#efficient-convolution-algorithms">Efficient Convolution Algorithms</a></li>
+    
+
+    <li class="toctree-l2"><a href="#random-or-unsupervised-features">Random or Unsupervised Features</a></li>
+    
+
+    <li class="toctree-l2"><a href="#the-neuroscientific-basis-for-convolutional-network">The Neuroscientific Basis For Convolutional Network</a></li>
+    
+
+    <li class="toctree-l2"><a href="#convolutional-networks-and-the-history-of-deep-learning">Convolutional Networks And The History Of Deep Learning</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../spectral/">SpectralClustering</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../gan/">GAN</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Convolutional Network 9</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="1" src="../CNNbasics/images/image1.jpg" /></p>
+<p><img alt="1" src="../CNNbasics/images/image3.jpg" /></p>
+<p><img alt="1" src="../CNNbasics/images/image4.jpg" /></p>
+<p><img alt="1" src="../CNNbasics/images/image5.jpg" /></p>
+<p><img alt="1" src="../CNNbasics/images/image6.jpg" /></p>
+<h2 id="the-convolution-operation">The Convolution Operation<a class="headerlink" href="#the-convolution-operation" title="Permanent link"></a></h2>
+<h2 id="motivation">Motivation<a class="headerlink" href="#motivation" title="Permanent link"></a></h2>
+<h2 id="pooling">Pooling<a class="headerlink" href="#pooling" title="Permanent link"></a></h2>
+<h2 id="convolution-and-pooling-as-an-infinitely-strong-prior">Convolution And Pooling as an Infinitely Strong Prior<a class="headerlink" href="#convolution-and-pooling-as-an-infinitely-strong-prior" title="Permanent link"></a></h2>
+<h2 id="variants-of-the-basic-convolution-function">Variants of the Basic Convolution Function<a class="headerlink" href="#variants-of-the-basic-convolution-function" title="Permanent link"></a></h2>
+<h2 id="structured-outputs">Structured Outputs<a class="headerlink" href="#structured-outputs" title="Permanent link"></a></h2>
+<h2 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Permanent link"></a></h2>
+<h2 id="efficient-convolution-algorithms">Efficient Convolution Algorithms<a class="headerlink" href="#efficient-convolution-algorithms" title="Permanent link"></a></h2>
+<h2 id="random-or-unsupervised-features">Random or Unsupervised Features<a class="headerlink" href="#random-or-unsupervised-features" title="Permanent link"></a></h2>
+<h2 id="the-neuroscientific-basis-for-convolutional-network">The Neuroscientific Basis For Convolutional Network<a class="headerlink" href="#the-neuroscientific-basis-for-convolutional-network" title="Permanent link"></a></h2>
+<h2 id="convolutional-networks-and-the-history-of-deep-learning">Convolutional Networks And The History Of Deep Learning<a class="headerlink" href="#convolutional-networks-and-the-history-of-deep-learning" title="Permanent link"></a></h2>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../spectral/" class="btn btn-neutral float-right" title="SpectralClustering">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../goodFellow8/" class="btn btn-neutral" title="Optimization for Deep-models 8"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../goodFellow8/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../spectral/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="../javascripts/config.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
