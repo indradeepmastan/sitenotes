@@ -467,22 +467,22 @@
         },
         {
             "location": "/presentationNotes/",
-            "text": "Background and Imp Questions\n\uf0c1\n\n\npresentationNotes/background.jpg\npresentationNotes/impQuestions.jpg\n\n\nMEDS\n\uf0c1\n\n\npresentationNotes/meds_.jpg\npresentationNotes/meds.jpg\npresentationNotes/meds2.jpg\n\n\nDCIL\n\uf0c1\n\n\npresentationNotes/dcil_.jpg\npresentationNotes/dcil.jpg",
+            "text": "Background and Imp Questions\n\uf0c1\n\n\n\n\n\n\nMEDS\n\uf0c1\n\n\n\n\n\n\n\n\nDCIL\n\uf0c1",
             "title": "Other Notes"
         },
         {
             "location": "/presentationNotes/#background-and-imp-questions",
-            "text": "presentationNotes/background.jpg\npresentationNotes/impQuestions.jpg",
+            "text": "",
             "title": "Background and Imp Questions"
         },
         {
             "location": "/presentationNotes/#meds",
-            "text": "presentationNotes/meds_.jpg\npresentationNotes/meds.jpg\npresentationNotes/meds2.jpg",
+            "text": "",
             "title": "MEDS"
         },
         {
             "location": "/presentationNotes/#dcil",
-            "text": "presentationNotes/dcil_.jpg\npresentationNotes/dcil.jpg",
+            "text": "",
             "title": "DCIL"
         }
     ]
