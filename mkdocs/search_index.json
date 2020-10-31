@@ -464,6 +464,26 @@
             "location": "/gan/",
             "text": "The notes shoud be read in the ordering.",
             "title": "GAN"
+        },
+        {
+            "location": "/presentationNotes/",
+            "text": "Background and Imp Questions\n\uf0c1\n\n\n\n\n\n\nMEDS\n\uf0c1\n\n\n\n\n\n\n\n\nDCIL\n\uf0c1",
+            "title": "Other Notes"
+        },
+        {
+            "location": "/presentationNotes/#background-and-imp-questions",
+            "text": "",
+            "title": "Background and Imp Questions"
+        },
+        {
+            "location": "/presentationNotes/#meds",
+            "text": "",
+            "title": "MEDS"
+        },
+        {
+            "location": "/presentationNotes/#dcil",
+            "text": "",
+            "title": "DCIL"
         }
     ]
 }
